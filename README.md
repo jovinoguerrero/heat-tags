@@ -1,19 +1,29 @@
 # HeatTags
 
-To start your Phoenix server:
+Para a criação deste projetos se utilizaram as seguintes tecnologias:
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+- Postgresql
+- Elixir
+- Phoenix
+- Visual Studio Code
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Rodando o projeto :
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+  * Instalar as dependências com `mix deps.get`
+  * Criar e migrar o banco de dados com `mix ecto.setup`
+  * Rodar o endpoint de Phoenix com `mix phx.server` ou dentro do Elixir interativo (IEx) `iex -S mix phx.server`
 
-## Learn more
+O porto está configurado em -> [`localhost:4000`](http://localhost:4000)
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+Rotas:
+
+*POST* - /api/message
+Registra um username, um email e uma mensagem
+- exemplo de body:
+```
+{
+  "username": "elixir test",
+  "email": "test@elixir.com",
+  "message": "mensagem elixir"
+}
+```
