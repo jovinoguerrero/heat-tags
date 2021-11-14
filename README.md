@@ -15,8 +15,6 @@ Rodando o projeto :
 
 O porto está configurado em -> [`localhost:4000`](http://localhost:4000)
 
-Rotas:
-
 *POST* - /api/message
 Registra um username, um email e uma mensagem
 - exemplo de body:
